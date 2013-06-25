@@ -2,13 +2,13 @@
 %global rlibdir  %{_datadir}/R/library
 
 Name:             R-%{packname}
-Version:          1.1_5
+Version:          1.1_8
 Release:          2
 Summary:          Statistical shape analysis
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.1-5.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.1-8.tar.gz
 BuildArch:        noarch
 Requires:         R-core
 Requires:         R-scatterplot3d R-rgl R-MASS 
@@ -48,3 +48,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/data
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1_5-1
++ Revision: 776927
+- Import R-shapes
+- Import R-shapes
+
